@@ -48,13 +48,6 @@ COMMANDS
   /wm checklinks               report resolved ability links
   /wm reset                    reset window positions
 
-EDITING THE DATA
-  Open Data_*.lua in a text editor. Boss fields:
-    name, aliases, tldr, start, general, tank, heal, dps, abilities, hard
-  Line tags:   "[10] text" = only in 10-man,  "[25] text" = only in 25-man,
-               "#{a/b}" = a in 10-man / b in 25-man,  "## Title" = sub-heading inside a list.
-  Ability:     { ids = { 10-man id, 25-man id }, name = "Exact Spell Name", desc = "..." }
-  Boss names must match the in-game NPC name (English client) for the popup to trigger.
   Personal notes are stored in your saved variables, keyed by raid and boss name.
 
 <img width="993" height="649" alt="Screenshot 2026-09-22 111829" src="https://github.com/user-attachments/assets/f214bef6-9c32-4ab1-a6f3-2456928f8c04" />
