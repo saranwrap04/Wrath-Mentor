@@ -123,3 +123,9 @@ LINKS
   GitHub:   https://github.com/saranwrap04/Wrath-Mentor
   Warperia: https://warperia.com/addon-wotlk/wrath-mentor/
   Both are also shown at the bottom of the in-game Settings panel.
+<img width="1083" height="851" alt="Screenshot 2026-09-30 184216" src="https://github.com/user-attachments/assets/2f3d50c6-9bdc-4cc6-8d5b-741ded0a2b2e" />
+<img width="1075" height="854" alt="Screenshot 2026-09-30 184225" src="https://github.com/user-attachments/assets/1d3e1d83-fe50-4776-9019-d0610538c03f" />
+<img width="1076" height="853" alt="Screenshot 2026-09-30 184233" src="https://github.com/user-attachments/assets/fc6ebbe9-7c54-416d-8180-9dd76a339ba8" />
+<img width="824" height="755" alt="Screenshot 2026-09-30 184249" src="https://github.com/user-attachments/assets/1e19724c-a0b4-4b3b-9ddc-86464043ce2c" />
+<img width="660" height="61" alt="Screenshot 2026-09-30 184255" src="https://github.com/user-attachments/assets/6520e671-25f0-4f32-9d5d-36567ce1b783" />
+
