@@ -1,4 +1,4 @@
-WRATH MENTOR v2.2.4  -  in-game tactics for every WotLK raid (WoW 3.3.5a)
+WRATH MENTOR v2.3.1  -  in-game tactics for every WotLK raid (WoW 3.3.5a)
 ==========================================================================
 
 INSTALL
