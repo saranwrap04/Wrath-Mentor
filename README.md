@@ -1,3 +1,5 @@
+*Always download zip from the code to use the latest addon version*
+
 WRATH MENTOR v2.18.1  -  in-game tactics for every WotLK raid (WoW 3.3.5a)
 by Saranwrap
 ==========================================================================
