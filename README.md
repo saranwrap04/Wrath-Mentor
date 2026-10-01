@@ -5,7 +5,7 @@ by Saranwrap
 ==========================================================================
 
 INSTALL
-  Delete any old WrathMentor folder, then copy this "WrathMentor" folder into:
+  Delete any old WrathMentor folder, then extract and copy the "WrathMentor" folder into:
       <WoW folder>\Interface\AddOns\
   Restart the game (or /reload). Your saved settings are kept.
 
