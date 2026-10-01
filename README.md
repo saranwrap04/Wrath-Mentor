@@ -1,4 +1,4 @@
-WRATH MENTOR v2.15.3  -  in-game tactics for every WotLK raid (WoW 3.3.5a)
+WRATH MENTOR v2.18.1  -  in-game tactics for every WotLK raid (WoW 3.3.5a)
 by Saranwrap
 ==========================================================================
 
@@ -28,9 +28,15 @@ WHAT'S IN THE WINDOW (/wm)
   in place rather than scrolling with the text below - 3D model widgets are known to render
   incorrectly (or not at all) when placed inside a scrolling region, so it has to stay pinned to
   actually show up. The model is a static view (no dragging, zooming, or hover tooltip) and
-  shows your current live target if it's this boss (100% accurate), otherwise falls back to a
-  stored creature ID if the addon has one, or nothing at all if it doesn't. Turn it off with the
-  "Show the 3D boss model preview" checkbox in Settings, or /wm models.
+  shows your current live target if it's this boss (100% accurate) - that's the only way it ever
+  shows a model; a stored creature ID alone is never enough on its own, since this client doesn't
+  reliably support showing a model from an ID without targeting it (confirmed: it reports
+  success even when it silently fails to update, so it can't be trusted). Once you've targeted
+  a boss and seen its model, that model stays remembered for the rest of the session - leave
+  its page, browse other bosses, come back later with no target at all, and it's still there.
+  Other bosses' pages correctly show nothing for themselves in the meantime (it only ever shows
+  on the page of whichever boss it's actually displaying). Turn it off with the "Show the 3D
+  boss model preview" checkbox in Settings, or /wm models.
 
   Each boss shows, in order: TL;DR, How to start the fight, Strategy, Tank/Healer/DPS tips, the
   Hard mode / Heroic explanation, and finally the full Boss Abilities / Buffs & Debuffs lists at
@@ -56,6 +62,11 @@ SEND TO CHAT
   mode section instead), or TL;DR (just the one-line summary, no ability list, for a quick post).
   One line at a time, throttled so it won't trip chat flood limits.
 
+  Which channel it sends to: if you currently have a chat box open (pressed Enter, or a
+  channel-specific key) - raid, party, say, yell, guild, officer, whatever - it sends there,
+  same as if you'd typed it yourself. With no chat box open, it falls back to raid if you're in
+  one, otherwise party if you're in one, otherwise it's just printed locally for you to read.
+
 ABILITY LINKS
   In the Boss Abilities and Buffs & Debuffs lists, each entry is shown with its spell icon next
   to a [Spell Name] link. Hover for the real game tooltip, click to open it, shift-click to put
@@ -78,6 +89,19 @@ BUFFS & DEBUFFS
   here - only the boss abilities list shows. The Copy view lists these under their own
   "BUFFS & DEBUFFS" heading, separate from "BOSS ABILITIES".
 
+SETTINGS
+  Settings is its own window - not Blizzard's Interface/AddOns options panel - movable, closable
+  with the X or Escape, same look as the main tactics window. Open it with /wm config, the
+  "Settings" button in the main window, or right-clicking the minimap button. It has checkboxes
+  for the chat TL;DR announcement, the 3D model preview and the minimap button; sliders for the
+  tactics window's size and opacity; the "Send to chat" content picker; test/reset buttons; the
+  everyday command list; and the GitHub/Warperia links (shown as plain text you can still click
+  and copy - no visible box around them). Changes apply immediately - there's no separate "Okay"
+  step. "Defaults" in the top-right resets everything back to its starting values. The command
+  list only shows everyday commands - the two diagnostic ones (/wm modeltest, /wm checklinks)
+  are left off on purpose so they're not something people stumble into; both still work fine
+  typed directly, they're just not advertised.
+
 COMMANDS
   /wm                          open / close
   /wm <boss name>              open a boss (partial names work: /wm lich, /wm sapph, /wm yogg)
@@ -88,11 +112,12 @@ COMMANDS
   /wm models                   toggle the 3D boss model preview on or off
   /wm minimap                  toggle the minimap button on or off
   /wm modeltest                print a step-by-step diagnostic if the 3D model preview isn't showing
-  /wm config                   settings panel (also lists every command, right at the bottom)
+  /wm config                   opens/closes the Settings window (also lists every command, one
+                                per line, in its own scrolling box near the bottom)
   /wm send [raid|party|say]    send the selected boss to chat (Strategy/Hard Mode/TL;DR - see Settings)
   /wm checklinks               report resolved ability links
   /wm reset                    reset window position/size
-  This same list is also shown inside the Settings panel itself, so you don't have to come back
+  This same list is also shown inside the Settings window itself, so you don't have to come back
   here to check it.
 
 EDITING THE DATA
@@ -104,28 +129,33 @@ EDITING THE DATA
   Boss names must match the in-game NPC name (English client) for the chat announcement to trigger.
   Personal notes are stored in your saved variables, keyed by raid and boss name.
 
-ICON
-  icon.png (150x150) is a preview/listing image for this addon. WoW 3.3.5a loads textures as
-  .blp or .tga, not .png, so it is not loaded in-game - it's for CurseForge/WoWInterface-style
-  listings or your addon manager.
-
-ADDING MORE 3D MODELS
-  Add npcId = <creature ID> right after a boss's "name" line in its Data_*.lua file (e.g.
-  npcId = 15956 for Anub'Rekhan). This is the boss's NPC/creature ID, not a spell ID - find it
-  on a site like Warcraft Wiki or Wowhead ("npc=15956" in the page URL). 14 Naxxramas bosses
-  have this set already; the rest are still open. Note that npcId is only ever a fallback:
-  whenever you have the selected boss actually targeted in-game, the preview uses that live
-  target instead and ignores npcId entirely, since that's always guaranteed correct. A boss
-  with no npcId and no live target just shows nothing instead of a blank frame or, worse, the
-  wrong model.
+ABOUT THE npcId FIELD
+  Some bosses in the Data_*.lua files still have an npcId = <creature ID> line left over from an
+  earlier attempt at showing a model without targeting the boss first. It's no longer used for
+  anything - this client doesn't reliably support that approach (it reports success even when it
+  silently fails to actually change the model, which was causing the wrong boss's model to get
+  stuck showing), so the addon only ever shows a model when you've actually targeted that boss.
+  The field is harmless to leave in the data files; it's just inert.
 
 LINKS
   GitHub:   https://github.com/saranwrap04/Wrath-Mentor
   Warperia: https://warperia.com/addon-wotlk/wrath-mentor/
-  Both are also shown at the bottom of the in-game Settings panel.
-<img width="1083" height="851" alt="Screenshot 2026-09-30 184216" src="https://github.com/user-attachments/assets/2f3d50c6-9bdc-4cc6-8d5b-741ded0a2b2e" />
-<img width="1075" height="854" alt="Screenshot 2026-09-30 184225" src="https://github.com/user-attachments/assets/1d3e1d83-fe50-4776-9019-d0610538c03f" />
-<img width="1076" height="853" alt="Screenshot 2026-09-30 184233" src="https://github.com/user-attachments/assets/fc6ebbe9-7c54-416d-8180-9dd76a339ba8" />
-<img width="824" height="755" alt="Screenshot 2026-09-30 184249" src="https://github.com/user-attachments/assets/1e19724c-a0b4-4b3b-9ddc-86464043ce2c" />
-<img width="660" height="61" alt="Screenshot 2026-09-30 184255" src="https://github.com/user-attachments/assets/6520e671-25f0-4f32-9d5d-36567ce1b783" />
+  Both are also shown at the bottom of the in-game Settings window, as real copyable text boxes
+  (click one, Ctrl+A, Ctrl+C) - always in the same place regardless of how long the command
+  list above them is, since that list scrolls within its own fixed-height box.
 
+Main addon window
+
+<img width="1057" height="854" alt="Screenshot 2026-10-01 090125" src="https://github.com/user-attachments/assets/d1185377-fada-4242-a69e-d2a3abfbd5e6" />
+<img width="1059" height="850" alt="Screenshot 2026-10-01 090138" src="https://github.com/user-attachments/assets/f2661653-e216-4599-bd35-63194c987a52" />
+<img width="1055" height="849" alt="Screenshot 2026-10-01 090152" src="https://github.com/user-attachments/assets/e92304b4-9b55-4ce0-b3c3-3a293cc47b5a" />
+<img width="1056" height="851" alt="Screenshot 2026-10-01 090201" src="https://github.com/user-attachments/assets/dde80643-2f4e-4ce2-8f5d-d72de7a69abf" />
+<img width="1056" height="858" alt="Screenshot 2026-10-01 090212" src="https://github.com/user-attachments/assets/ba8d2cf7-6ad3-4eb6-bd1d-48b45edb5f29" />
+
+Settings Window
+
+<img width="781" height="986" alt="Screenshot 2026-10-01 090229" src="https://github.com/user-attachments/assets/0ab2c800-fc32-4970-b022-214097364ba3" />
+
+Show TL;DR in chat when i target a boss
+
+<img width="660" height="49" alt="Screenshot 2026-10-01 090314" src="https://github.com/user-attachments/assets/2e77b776-dad1-4f30-8b47-ef189c79e77c" />
