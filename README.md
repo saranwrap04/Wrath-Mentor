@@ -3,7 +3,7 @@
 
 *Always download zip from the code to use the latest addon version*
 
-WRATH MENTOR v3.0.0
+WRATH MENTOR v3.1.0
 In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
 By Saranwrap
 
@@ -97,6 +97,8 @@ EDITING THE TACTICS
   "#{a/b}"                    a in 10-man, b in 25-man
   "## Title"                  sub-heading inside a section
   Ability: { ids = { 10-man id, 25-man id }, name = "Exact Spell Name", desc = "..." }
+  If the name shown in the guide differs from the spell's in-game name, add
+  spellName = "In-game Name" (e.g. Malygos' Deep Breath is the spell "Surge of Power").
   Boss names must match the in-game name (English client) for the chat announcement to work.
   The npcId field in some bosses is no longer used and can be ignored.
 
