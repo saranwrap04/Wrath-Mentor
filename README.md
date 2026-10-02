@@ -3,7 +3,7 @@
 
 *Always download zip from the code to use the latest addon version*
 
-WRATH MENTOR v3.1.0
+WRATH MENTOR v3.2.2
 In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
 By Saranwrap
 
@@ -22,6 +22,7 @@ QUICK START
   /wm            open the tactics window
   /wm lich       open a boss directly (part of the name is enough)
   Left-click the minimap button to open the window, right-click it for Settings.
+  Settings (title bar button) opens inside the window; press Back to return.
 
 
 THE TACTICS WINDOW
@@ -35,7 +36,22 @@ THE TACTICS WINDOW
   - Notes: your own notes for the selected boss. Press Save. Bosses with notes are shown in blue
     in the list.
   - Copy: shows the page as plain text so you can select it and press Ctrl+C.
+  - Loot: shows the boss's loot table instead of the tactics (press Back or Tactics to return).
   - Resize the window by dragging the bottom-right corner.
+
+
+LOOT TABLES
+  Press Loot (next to Copy) or type /wm loot.
+  - The selected boss's loot with item type, item level and drop chance.
+  - 10 / 25 follows the size buttons. Heroic button for Trial of the Crusader,
+    Icecrown Citadel and Ruby Sanctum.
+  - Trash: the raid's trash epics (chance per mob). Patterns: patterns and
+    recipes with the boss or trash they drop from. Trial of the Crusader also
+    has Tribute (the heroic tribute chest).
+  - HM = only in hard mode (Ulduar hard modes, Sartharion with drakes up...).
+  - Hover an item for its tooltip, shift-click to link it, ctrl-click to try it on.
+  Chances are worked out from the AzerothCore world database (the core
+  ChromieCraft runs on). The server can change its loot, so treat them as a guide.
 
 
 3D BOSS MODEL
@@ -61,7 +77,8 @@ SEND TO CHAT
   "Test send to chat" in Settings shows you exactly what would be posted. Nothing is sent.
 
 
-SETTINGS  (/wm config)
+SETTINGS  (/wm config, or Settings in the title bar)
+  Opens inside the main window (scroll for the rest); press Back to return.
   - Chat announcement on/off, raid instances only, Test button
   - 3D model preview on/off
   - Minimap button on/off
@@ -77,11 +94,12 @@ COMMANDS
   /wm role all|tank|heal|dps   role filter
   /wm size 10|25               10-man or 25-man text
   /wm notes                    open / close the notes box
+  /wm loot                     loot table of the selected boss on / off
   /wm announce                 chat announcement on / off
   /wm models                   3D model preview on / off
   /wm minimap                  minimap button on / off
   /wm send [raid|party|say]    send the selected boss to chat
-  /wm config                   open / close Settings
+  /wm config                   open / close the Settings page
   /wm reset                    reset window position and size
   /wm help                     list the commands in chat
 
@@ -106,11 +124,15 @@ EDITING THE TACTICS
 LINKS
   GitHub:   https://github.com/saranwrap04/Wrath-Mentor
   Warperia: https://warperia.com/addon-wotlk/wrath-mentor/
+  
+<img width="1049" height="1002" alt="Screenshot 2026-10-02 135246" src="https://github.com/user-attachments/assets/bbcb40cb-800a-4ac8-8be6-1a70a4667c4e" />
 
-<img width="1049" height="999" alt="Screenshot 2026-10-02 080328" src="https://github.com/user-attachments/assets/e213a213-4a30-4230-a611-057f498014e0" />
-<img width="1051" height="1004" alt="Screenshot 2026-10-02 080350" src="https://github.com/user-attachments/assets/7784414a-8f7c-4e6f-8210-bba2a647db65" />
-<img width="1046" height="1003" alt="Screenshot 2026-10-02 080410" src="https://github.com/user-attachments/assets/0e30d382-fa50-45f4-9a30-bd2e45c21a7d" />
-<img width="1049" height="999" alt="Screenshot 2026-10-02 080425" src="https://github.com/user-attachments/assets/984e9661-fd28-41d0-84db-676d1fab3cf9" />
-<img width="794" height="1002" alt="Screenshot 2026-10-02 080444" src="https://github.com/user-attachments/assets/e0f6155a-90a5-45b7-b001-10a5c1ecda67" />
-<img width="664" height="56" alt="Screenshot 2026-10-02 080452" src="https://github.com/user-attachments/assets/4647bf29-359f-471f-9420-a1b497f26483" />
+<img width="1047" height="996" alt="Screenshot 2026-10-02 135259" src="https://github.com/user-attachments/assets/90ff2fba-2380-4031-87f4-dc09d22faf91" />
 
+<img width="1052" height="999" alt="Screenshot 2026-10-02 135308" src="https://github.com/user-attachments/assets/4231bcc5-e60d-4e5b-81c1-012aac00d2f0" />
+
+<img width="1050" height="1005" alt="Screenshot 2026-10-02 135318" src="https://github.com/user-attachments/assets/12255501-c029-41c1-ad38-d41c9a027567" />
+
+<img width="1052" height="1004" alt="Screenshot 2026-10-02 135334" src="https://github.com/user-attachments/assets/d55b0623-8e0d-448e-9d38-568fcfc640fa" />
+
+<img width="663" height="69" alt="Screenshot 2026-10-02 135217" src="https://github.com/user-attachments/assets/5c7d79b4-7390-4105-8008-2b7d20a8dffd" />
