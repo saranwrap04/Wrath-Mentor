@@ -1,3 +1,6 @@
+<img width="627" height="627" alt="Wrath Mentor Emblem half" src="https://github.com/user-attachments/assets/d16140c7-85e2-4a8c-96b6-f577e999bb96" />
+
+
 *Always download zip from the code to use the latest addon version*
 
 WRATH MENTOR v3.0.0
@@ -108,6 +111,4 @@ LINKS
 <img width="1049" height="999" alt="Screenshot 2026-10-02 080425" src="https://github.com/user-attachments/assets/984e9661-fd28-41d0-84db-676d1fab3cf9" />
 <img width="794" height="1002" alt="Screenshot 2026-10-02 080444" src="https://github.com/user-attachments/assets/e0f6155a-90a5-45b7-b001-10a5c1ecda67" />
 <img width="664" height="56" alt="Screenshot 2026-10-02 080452" src="https://github.com/user-attachments/assets/4647bf29-359f-471f-9420-a1b497f26483" />
-<img width="1254" height="1254" alt="Wrath Mentor Emblem" src="https://github.com/user-attachments/assets/2408bdf3-f565-4e78-99a8-c444019d6f71" />
-<img width="150" height="150" alt="Wrath Mentor 150x150" src="https://github.com/user-attachments/assets/dc5943dc-b9db-4f75-84cc-98dae63fb9c2" />
-<img width="1254" height="1254" alt="Wrath Mentor Icon v2" src="https://github.com/user-attachments/assets/767107fe-9b18-483a-a8ea-97b860f705aa" />
+
