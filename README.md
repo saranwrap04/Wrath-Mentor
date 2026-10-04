@@ -1,9 +1,9 @@
-<img width="1254" height="1254" alt="wrath_mentor_transparent" src="https://github.com/user-attachments/assets/630c0bff-ec74-4d45-8220-11e144f72a65" />
+<img width="627" height="627" alt="wrath_mentor_transparent" src="https://github.com/user-attachments/assets/b156dcbf-29e3-44b7-97fd-054e6ba74d5e" />
 
 
 *Always download zip from the code to use the latest addon version*
 
-WRATH MENTOR v3.2.2
+WRATH MENTOR v3.3.0
 In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
 By Saranwrap
 
@@ -49,6 +49,8 @@ LOOT TABLES
     recipes with the boss or trash they drop from. Trial of the Crusader also
     has Tribute (the heroic tribute chest).
   - HM = only in hard mode (Ulduar hard modes, Sartharion with drakes up...).
+  - A (blue) / H (red) after a name = Alliance / Horde only item.
+  - Click a column title (Item, Type, iLvl, Chance) to sort, click again to reverse.
   - Hover an item for its tooltip, shift-click to link it, ctrl-click to try it on.
   Chances are worked out from the AzerothCore world database (the core
   ChromieCraft runs on). The server can change its loot, so treat them as a guide.
@@ -124,6 +126,7 @@ EDITING THE TACTICS
 LINKS
   GitHub:   https://github.com/saranwrap04/Wrath-Mentor
   Warperia: https://warperia.com/addon-wotlk/wrath-mentor/
+
   
 <img width="1049" height="1002" alt="Screenshot 2026-10-02 135246" src="https://github.com/user-attachments/assets/bbcb40cb-800a-4ac8-8be6-1a70a4667c4e" />
 
