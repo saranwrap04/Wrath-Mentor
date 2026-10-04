@@ -1,4 +1,4 @@
-<img width="627" height="627" alt="Wrath Mentor Emblem half" src="https://github.com/user-attachments/assets/d16140c7-85e2-4a8c-96b6-f577e999bb96" />
+<img width="1254" height="1254" alt="wrath_mentor_transparent" src="https://github.com/user-attachments/assets/630c0bff-ec74-4d45-8220-11e144f72a65" />
 
 
 *Always download zip from the code to use the latest addon version*
