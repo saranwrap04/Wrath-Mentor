@@ -1,8 +1,8 @@
 <img width="627" height="627" alt="wrath_mentor_transparent" src="https://github.com/user-attachments/assets/b156dcbf-29e3-44b7-97fd-054e6ba74d5e" />
 
-#WRATH MENTOR v3.3.0
+# WRATH MENTOR v3.3.0
 
-##In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
+## In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
 By Saranwrap
 
 Raids: Naxxramas, The Obsidian Sanctum, The Eye of Eternity, Ulduar, Vault of Archavon,
