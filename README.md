@@ -9,21 +9,21 @@ Raids: Naxxramas, The Obsidian Sanctum, The Eye of Eternity, Ulduar, Vault of Ar
 Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
 
 
-INSTALL
+### INSTALL
   1. Close the game.
   2. Delete any old "WrathMentor" folder in <WoW folder>\Interface\AddOns\
   3. Copy the new "WrathMentor" folder there (keep the "textures" folder inside it).
   4. Start the game. Your settings and notes are kept.
 
 
-QUICK START
+### QUICK START
   /wm            open the tactics window
   /wm lich       open a boss directly (part of the name is enough)
   Left-click the minimap button to open the window, right-click it for Settings.
   Settings (title bar button) opens inside the window; press Back to return.
 
 
-THE TACTICS WINDOW
+### THE TACTICS WINDOW
   - Pick a raid and a boss in the list on the left.
   - All / Tank / Healer / DPS: show only the tips for your role.
   - 10 / 25: switch the text between the 10-man and 25-man version.
@@ -38,7 +38,7 @@ THE TACTICS WINDOW
   - Resize the window by dragging the bottom-right corner.
 
 
-LOOT TABLES
+### LOOT TABLES
   Press Loot (next to Copy) or type /wm loot.
   - The selected boss's loot with item type, item level and drop chance.
   - 10 / 25 follows the size buttons. Heroic button for Trial of the Crusader,
@@ -54,20 +54,20 @@ LOOT TABLES
   ChromieCraft runs on). The server can change its loot, so treat them as a guide.
 
 
-3D BOSS MODEL
+### 3D BOSS MODEL
   Target the boss to load its 3D model in the top-right corner of its page. The model stays
   available for the rest of the session, even after you drop the target. Until then, the spot
   shows the Wrath Mentor artwork with a "Target <boss>" reminder.
   Turn it off in Settings or with /wm models.
 
 
-CHAT ANNOUNCEMENT
+### CHAT ANNOUNCEMENT
   When you target a raid boss, you get a chat line with its TL;DR and a link to its guide
   (shift-click the link to open it). Only you see it, and it shows once per fight.
   Settings: turn it on/off, choose raid instances only, and press "Test" to see it now.
 
 
-SEND TO CHAT
+### SEND TO CHAT
   "Send to chat" posts the selected boss to your group. Choose what it sends in Settings:
     Strategy    strategy + ability links (default)
     Hard Mode   hard mode section + ability links
@@ -77,7 +77,7 @@ SEND TO CHAT
   "Test send to chat" in Settings shows you exactly what would be posted. Nothing is sent.
 
 
-SETTINGS  (/wm config, or Settings in the title bar)
+### SETTINGS  (/wm config, or Settings in the title bar)
   Opens inside the main window (scroll for the rest); press Back to return.
   - Chat announcement on/off, raid instances only, Test button
   - 3D model preview on/off
@@ -88,7 +88,7 @@ SETTINGS  (/wm config, or Settings in the title bar)
   - Reset position/size: puts the window back in the middle at its default size
 
 
-COMMANDS
+### COMMANDS
   /wm                          open / close the window
   /wm <boss name>              open a boss (partial names work: /wm sapph, /wm yogg)
   /wm role all|tank|heal|dps   role filter
@@ -108,7 +108,7 @@ COMMANDS
   /wm checklinks               shows how many ability links work on your client
 
 
-EDITING THE TACTICS
+### EDITING THE TACTICS
   The text lives in the Data_*.lua files (one per raid group). Boss fields:
     name, aliases, tldr, start, general, tank, heal, dps, hard, abilities
   "[10] text" / "[25] text"   line only shown in 10-man / 25-man
@@ -121,7 +121,7 @@ EDITING THE TACTICS
   The npcId field in some bosses is no longer used and can be ignored.
 
 
-LINKS
+### LINKS
   GitHub:   https://github.com/saranwrap04/Wrath-Mentor
   Warperia: https://warperia.com/addon-wotlk/wrath-mentor/
 
