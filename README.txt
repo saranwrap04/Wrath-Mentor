@@ -1,29 +1,27 @@
-<img width="627" height="627" alt="wrath_mentor_transparent" src="https://github.com/user-attachments/assets/b156dcbf-29e3-44b7-97fd-054e6ba74d5e" />
-
-# WRATH MENTOR v3.3.1
-
-## In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
+WRATH MENTOR v3.3.1
+In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
 By Saranwrap
 
 Raids: Naxxramas, The Obsidian Sanctum, The Eye of Eternity, Ulduar, Vault of Archavon,
 Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
 
 
-### INSTALL
+INSTALL
   1. Close the game.
-  2. Click **Code > Download ZIP**, then extract the zip into `<WoW folder>\Interface\AddOns\`.
-     You get a folder named `Wrath-Mentor-main`: keep that name, it is the one the addon loads from.
+  2. Extract the zip into <WoW folder>\Interface\AddOns\ and keep the folder name it comes with:
+     "WrathMentor", or "Wrath-Mentor-main" when downloaded from GitHub (Code > Download ZIP).
+     Do not rename it, and keep only one of them.
   3. Start the game.
 
 
-### QUICK START
+QUICK START
   /wm            open the tactics window
   /wm lich       open a boss directly (part of the name is enough)
   Left-click the minimap button to open the window, right-click it for Settings.
   Settings (title bar button) opens inside the window; press Back to return.
 
 
-### THE TACTICS WINDOW
+THE TACTICS WINDOW
   - Pick a raid and a boss in the list on the left.
   - All / Tank / Healer / DPS: show only the tips for your role.
   - 10 / 25: switch the text between the 10-man and 25-man version.
@@ -38,7 +36,7 @@ Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
   - Resize the window by dragging the bottom-right corner.
 
 
-### LOOT TABLES
+LOOT TABLES
   Press Loot (next to Copy) or type /wm loot.
   - The selected boss's loot with item type, item level and drop chance.
   - 10 / 25 follows the size buttons. Heroic button for Trial of the Crusader,
@@ -54,20 +52,20 @@ Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
   ChromieCraft runs on). The server can change its loot, so treat them as a guide.
 
 
-### 3D BOSS MODEL
+3D BOSS MODEL
   Target the boss to load its 3D model in the top-right corner of its page. The model stays
   available for the rest of the session, even after you drop the target. Until then, the spot
   shows the Wrath Mentor artwork with a "Target <boss>" reminder.
   Turn it off in Settings or with /wm models.
 
 
-### CHAT ANNOUNCEMENT
+CHAT ANNOUNCEMENT
   When you target a raid boss, you get a chat line with its TL;DR and a link to its guide
   (shift-click the link to open it). Only you see it, and it shows once per fight.
   Settings: turn it on/off, choose raid instances only, and press "Test" to see it now.
 
 
-### SEND TO CHAT
+SEND TO CHAT
   "Send to chat" posts the selected boss to your group. Choose what it sends in Settings:
     Strategy    strategy + ability links (default)
     Hard Mode   hard mode section + ability links
@@ -77,7 +75,7 @@ Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
   "Test send to chat" in Settings shows you exactly what would be posted. Nothing is sent.
 
 
-### SETTINGS  (/wm config, or Settings in the title bar)
+SETTINGS  (/wm config, or Settings in the title bar)
   Opens inside the main window (scroll for the rest); press Back to return.
   - Chat announcement on/off, raid instances only, Test button
   - 3D model preview on/off
@@ -88,7 +86,7 @@ Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
   - Reset position/size: puts the window back in the middle at its default size
 
 
-### COMMANDS
+COMMANDS
   /wm                          open / close the window
   /wm <boss name>              open a boss (partial names work: /wm sapph, /wm yogg)
   /wm role all|tank|heal|dps   role filter
@@ -108,7 +106,7 @@ Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
   /wm checklinks               shows how many ability links work on your client
 
 
-### EDITING THE TACTICS
+EDITING THE TACTICS
   The text lives in the Data_*.lua files (one per raid group). Boss fields:
     name, aliases, tldr, start, general, tank, heal, dps, hard, abilities
   "[10] text" / "[25] text"   line only shown in 10-man / 25-man
@@ -121,19 +119,6 @@ Trial of the Crusader, Onyxia's Lair, Icecrown Citadel, The Ruby Sanctum.
   The npcId field in some bosses is no longer used and can be ignored.
 
 
-### LINKS
+LINKS
   GitHub:   https://github.com/saranwrap04/Wrath-Mentor
   Warperia: https://warperia.com/addon-wotlk/wrath-mentor/
-
-  
-<img width="1049" height="1002" alt="Screenshot 2026-10-02 135246" src="https://github.com/user-attachments/assets/bbcb40cb-800a-4ac8-8be6-1a70a4667c4e" />
-
-<img width="1047" height="996" alt="Screenshot 2026-10-02 135259" src="https://github.com/user-attachments/assets/90ff2fba-2380-4031-87f4-dc09d22faf91" />
-
-<img width="1052" height="999" alt="Screenshot 2026-10-02 135308" src="https://github.com/user-attachments/assets/4231bcc5-e60d-4e5b-81c1-012aac00d2f0" />
-
-<img width="1050" height="1005" alt="Screenshot 2026-10-02 135318" src="https://github.com/user-attachments/assets/12255501-c029-41c1-ad38-d41c9a027567" />
-
-<img width="1052" height="1004" alt="Screenshot 2026-10-02 135334" src="https://github.com/user-attachments/assets/d55b0623-8e0d-448e-9d38-568fcfc640fa" />
-
-<img width="663" height="69" alt="Screenshot 2026-10-02 135217" src="https://github.com/user-attachments/assets/5c7d79b4-7390-4105-8008-2b7d20a8dffd" />
