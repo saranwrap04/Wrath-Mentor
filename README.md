@@ -1,7 +1,7 @@
 <img width="390" height="332" alt="wrath_mentor_logo" src="https://github.com/user-attachments/assets/a6364507-ba30-4280-8265-803950926630" />
 
 
-# WRATH MENTOR v3.3.1
+# WRATH MENTOR v3.3.3
 
 ## In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
 By Saranwrap
