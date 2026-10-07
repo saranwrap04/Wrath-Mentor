@@ -1,4 +1,5 @@
-<img width="627" height="627" alt="wrath_mentor_transparent" src="https://github.com/user-attachments/assets/b156dcbf-29e3-44b7-97fd-054e6ba74d5e" />
+<img width="390" height="332" alt="wrath_mentor_logo" src="https://github.com/user-attachments/assets/a6364507-ba30-4280-8265-803950926630" />
+
 
 # WRATH MENTOR v3.3.1
 
