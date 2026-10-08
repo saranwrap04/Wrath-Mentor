@@ -1,4 +1,4 @@
-WRATH MENTOR v3.3.1
+WRATH MENTOR v3.4.1
 In-game raid tactics for every Wrath of the Lich King raid boss (WoW 3.3.5a).
 By Saranwrap
 

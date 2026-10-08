@@ -36,14 +36,16 @@ local C = {
 ------------------------------------------------------------------
 -- Flat dark style (shared look with Raid Loot Tracker)
 ------------------------------------------------------------------
+-- flat dark style: dark backdrop, black borders, orange accent
 local S = {
-    bg      = { 0.05, 0.05, 0.07, 0.96 },
-    panel   = { 0.08, 0.08, 0.11, 1 },
-    band    = { 0.10, 0.10, 0.14, 1 },
-    border  = { 0.20, 0.20, 0.26, 1 },
-    button  = { 0.12, 0.12, 0.16, 1 },
-    active  = { 0.16, 0.32, 0.42, 1 },
-    accent  = { 0.31, 0.76, 0.97, 1 },
+    bg      = { 0.06, 0.06, 0.06, 0.92 },
+    panel   = { 0.10, 0.10, 0.10, 1 },
+    band    = { 0.13, 0.13, 0.13, 1 },
+    border  = { 0, 0, 0, 1 },
+    button  = { 0.10, 0.10, 0.10, 1 },
+    active  = { 0.45, 0.22, 0.08, 1 },
+    accent  = { 0.99, 0.48, 0.17, 1 },
+    title   = { 0.10, 0.10, 0.10, 1 },
     danger  = { 0.90, 0.30, 0.30, 1 },
 }
 
@@ -123,7 +125,7 @@ local function TitleBar(f, titleText, subText, onClose)
     bar:SetHeight(30)
     local bg = bar:CreateTexture(nil, "BACKGROUND")
     bg:SetAllPoints(bar)
-    bg:SetTexture(0.09, 0.09, 0.12, 1)
+    bg:SetTexture(unpack(S.title))
     local line = bar:CreateTexture(nil, "BORDER")
     line:SetPoint("BOTTOMLEFT", bar, "BOTTOMLEFT", 0, 0)
     line:SetPoint("BOTTOMRIGHT", bar, "BOTTOMRIGHT", 0, 0)
@@ -978,7 +980,7 @@ local function CreateNotes()
     bar:SetPoint("TOPLEFT", n, "TOPLEFT", 1, -1)
     bar:SetPoint("TOPRIGHT", n, "TOPRIGHT", -1, -1)
     bar:SetHeight(30)
-    bar:SetTexture(0.09, 0.09, 0.12, 1)
+    bar:SetTexture(unpack(S.title))
     local barLine = n:CreateTexture(nil, "BORDER")
     barLine:SetPoint("TOPLEFT", n, "TOPLEFT", 1, -31)
     barLine:SetPoint("TOPRIGHT", n, "TOPRIGHT", -1, -31)
@@ -1331,10 +1333,12 @@ local function CreateMain()
         local ph = CreateFrame("Frame", "WrathMentorModelPlaceholder", mp)
         ph:SetAllPoints(model)
         local skull = ph:CreateTexture(nil, "ARTWORK")
-        skull:SetWidth(124)
-        skull:SetHeight(124)
+        -- Wrath Mentor artwork: 256x256 texture, the picture fills the top 216 px
+        skull:SetWidth(140)
+        skull:SetHeight(119)
         skull:SetPoint("TOP", ph, "TOP", 0, 0)
         skull:SetTexture(WM.media .. "placeholder")
+        skull:SetTexCoord(0, 1, 0, 216 / 256)
         local phText = ph:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
         phText:SetPoint("TOP", skull, "BOTTOM", 0, -4)
         phText:SetWidth(132)
@@ -1811,6 +1815,7 @@ function WM:OpenOptions()
     end
     self:ShowSettingsPage(not ui.settingsShown)
 end
+
 
 function WM:SetupUI()
     CreateMinimapButton()

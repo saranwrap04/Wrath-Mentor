@@ -2,7 +2,7 @@
 ## Title: Wrath Mentor
 ## Notes: In-game tactics for every WotLK raid boss (10/25-man, hard modes, ability links, live 3D model preview, chat announcements, personal notes, resizable window, loot tables with drop chances). Type /wm
 ## Author: Saranwrap
-## Version: 3.3.1
+## Version: 3.4.1
 ## SavedVariables: WrathMentorDB
 
 Core.lua

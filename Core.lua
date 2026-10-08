@@ -7,7 +7,7 @@ local WM = WrathMentor
 WM.folder = ADDON_NAME or "WrathMentor"
 WM.media = "Interface\\AddOns\\" .. WM.folder .. "\\textures\\"
 
-WM.version = "3.3.1"
+WM.version = "3.4.1"
 WM.raids = {}        -- raids[id] = { id, name, zones, bosses, src }
 WM.raidOrder = {}    -- display order
 WM.nameIndex = {}    -- lowercase NPC name -> boss entry
@@ -58,7 +58,7 @@ function WM:BossKey(boss)
 end
 
 function WM:Print(msg)
-    DEFAULT_CHAT_FRAME:AddMessage("|cff33ccffWrath Mentor:|r " .. tostring(msg))
+    DEFAULT_CHAT_FRAME:AddMessage("|cfffc7a2bWrath Mentor:|r " .. tostring(msg))
 end
 
 ------------------------------------------------------------------
@@ -399,7 +399,7 @@ end
 
 function WM:AnnounceBoss(boss)
     local text = self:GetAnnounceText(boss)
-    local msg = "|cff33ccffWrath Mentor:|r |cffffd100" .. boss.name .. "|r - " .. text .. "  " .. self:BossLink(boss)
+    local msg = "|cfffc7a2bWrath Mentor:|r |cffffd100" .. boss.name .. "|r - " .. text .. "  " .. self:BossLink(boss)
     DEFAULT_CHAT_FRAME:AddMessage(msg)
 end
 
