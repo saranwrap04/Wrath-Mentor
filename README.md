@@ -1,5 +1,5 @@
 <p align="center">
-<img width="390" height="332" alt="wrath_mentor_logo_wow" src="https://github.com/user-attachments/assets/dc0e00a2-c897-4d83-a677-be5c2dfb6a83" />
+<img width="384" height="384" alt="Wrath Mentor" src="https://github.com/user-attachments/assets/b156dcbf-29e3-44b7-97fd-054e6ba74d5e" />
 </p>
 
 # Wrath Mentor
